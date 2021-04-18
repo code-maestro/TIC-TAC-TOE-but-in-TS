@@ -6,6 +6,22 @@
   column-gap: .5rem;
 }
 
+#heading{
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#heading img{
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.heading {
+  display: none;
+}
+
 .square{
   background-color: yellowgreen;
   height: 120px;
