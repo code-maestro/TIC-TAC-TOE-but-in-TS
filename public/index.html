@@ -31,7 +31,6 @@
 
     <style media="screen">
       body {
-        height: 100vh;
         background: #ECEFF1;
         color: rgba(0, 0, 0, 0.87);
         font-family: Roboto, Helvetica, Arial, sans-serif;
@@ -45,21 +44,6 @@
         margin: 100px auto 16px;
         padding: 32px 24px;
         border-radius: 20px;
-      }
-
-      h1 {
-        display: flex;
-        text-align: center;
-        margin-left: 15px;
-        font-size: 40px;
-        font-weight: 900;
-        margin-right: 15px;
-        justify-content: center;
-        color: #172a0f;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 12px;
-        border-radius: 4px;
       }
 
       #phoneBtn {display: none;}
@@ -89,19 +73,48 @@
         font-size: 13px;
       }
 
+      /* REPONSIVENESS */
       @media (max-width: 600px) {
-
         body,
         #message {
           align-items: center;
-          margin: 1px;
+          margin: 0;
           background: white;
           align-items: center;
           justify-content: center;
           box-shadow: none;
         }
 
+        .heading{
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .heading img{
+          margin-top: 3rem;
+          margin-right: 1rem;
+        }
+
+        .heading img :hover{
+          box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+          cursor: pointer;
+        }
+
+        .heading h1 {
+          font-size: 40px;
+          font-weight: 900;
+          color: #172a0f;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 12px;
+          border-radius: 4px;
+        }
+
         #message a {display: none;}
+        
+        #message #heading {display: none;}
         
         #phoneBtn {
           display: flex;
@@ -124,9 +137,18 @@
 
   <body>
     
-    <h1>TIC TAC TOE </h1>
+    <section class="heading">
+      <h1>TIC TAC TOE </h1>
+      <img width="32px" height="35px" src="images/mutli_players.png" alt="MULTI PLAYER OPTION">
+    </section>
     
     <div id="message">
+
+      <div id="heading">
+        <h1>TIC TAC TOE </h1>
+        <img width="32px" height="35px" src="images/mutli_players.png" alt="MULTI PLAYER OPTION">
+      </div>
+
       <!-- GAME BOARD -->
       <div id="board">
         <div class="square" id="0"> </div>
