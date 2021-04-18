@@ -122,7 +122,7 @@ const bestPlayer: any = () => {
   // Bottom Horizantal Winner's move
   if (boxes[6] === currentPlayerText) {
     if (boxes[7] === currentPlayerText && boxes[8] === currentPlayerText) {
-      alert(`${currentPlayerText} HAS WON MIDDLE VERTICALLY`);
+      alert(`${currentPlayerText} HAS WON BOTOM HORIZONTALLY`);
     }
   }
 }
