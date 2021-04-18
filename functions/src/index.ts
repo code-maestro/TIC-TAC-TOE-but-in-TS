@@ -78,7 +78,7 @@ const bestPlayer: any = () => {
     }
 
     if (boxes[4] === currentPlayerText && boxes[8] === currentPlayerText) {
-      alert(`${currentPlayerText} HAS WON DIAGONALLY`);
+      alert(`${currentPlayerText} HAS WON FORWARD DIAGONALLY`);
     }
     
     if (boxes[3] === currentPlayerText && boxes[6] === currentPlayerText) {
@@ -103,7 +103,7 @@ const bestPlayer: any = () => {
       alert(`${currentPlayerText} HAS WON VERTICALL RIGHT`);
     }
     if (boxes[4] === currentPlayerText && boxes[6] === currentPlayerText) {
-      alert(`${currentPlayerText} HAS WON DIAGONALLY`);
+      alert(`${currentPlayerText} HAS WON BACKWARD DIAGONALLY`);
     }
   }
 
