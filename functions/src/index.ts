@@ -29,7 +29,7 @@ let currentPlayerText: string = O_TEXT;
  */ 
 
 const squares = Array.from(document.getElementsByClassName('square'));
-console.log(squares);
+console.log(`${squares} 🙆‍🤹‍♂️ `);
 
 const checkClickedSquare = () => {
   squares.forEach((square, index) => {
@@ -77,31 +77,31 @@ const bestPlayer: any = () => {
     
     //Top Horizontal Winner's move
     if (boxes[1] === currentPlayerText && boxes[2] === currentPlayerText) {
-      alert(`${currentPlayerText} HAS WON TOP`);
+      alert(`${currentPlayerText} HAS WON TOP 🎊🎉✨`);
     }
 
     //Left `Forward` Diagonal Winner's move
     if (boxes[4] === currentPlayerText && boxes[8] === currentPlayerText) {
-      alert(`${currentPlayerText} HAS WON FORWARD DIAGONALLY`);
+      alert(`${currentPlayerText} HAS WON FORWARD DIAGONALLY 🎊🎉✨`);
     }
     
     //Left Vertical Winner's move
     if (boxes[3] === currentPlayerText && boxes[6] === currentPlayerText) {
-      alert(`${currentPlayerText} HAS WON VERTICALLY LEFT`);
+      alert(`${currentPlayerText} HAS WON VERTICALLY LEFT 🎊🎉✨`);
     } 
   }
 
   //Middle Horizantal Winner's move
   if (boxes[3] === currentPlayerText) {
     if (boxes[4] === currentPlayerText && boxes[5] === currentPlayerText) {
-      alert(`${currentPlayerText} HAS WON MIDDLE HORIZONTALLY`);
+      alert(`${currentPlayerText} HAS WON MIDDLE HORIZONTALLY 🎊🎉✨ `);
     }
   }
 
   //Middle Vertical Winner's move
   if (boxes[1] === currentPlayerText) {
     if (boxes[4] === currentPlayerText && boxes[7] === currentPlayerText) {
-      alert(`${currentPlayerText} HAS WON MIDDLE VERTICALLY`);
+      alert(`${currentPlayerText} HAS WON MIDDLE VERTICALLY 🎊🎉✨ `);
     }
   }
 
@@ -110,19 +110,19 @@ const bestPlayer: any = () => {
 
     //Right Vertical Winner's move
     if (boxes[5] === currentPlayerText && boxes[8] === currentPlayerText) {
-      alert(`${currentPlayerText} HAS WON VERTICALL RIGHT`);
+      alert(`${currentPlayerText} HAS WON VERTICALL RIGHT 🎊🎉✨ `);
     }
 
     //Right `Backward` Diagonal Winner's move
     if (boxes[4] === currentPlayerText && boxes[6] === currentPlayerText) {
-      alert(`${currentPlayerText} HAS WON BACKWARD DIAGONALLY`);
+      alert(`${currentPlayerText} HAS WON BACKWARD DIAGONALLY 🎊🎉✨`);
     }
   }
 
   // Bottom Horizantal Winner's move
   if (boxes[6] === currentPlayerText) {
     if (boxes[7] === currentPlayerText && boxes[8] === currentPlayerText) {
-      alert(`${currentPlayerText} HAS WON BOTOM HORIZONTALLY`);
+      alert(`${currentPlayerText} HAS WON BOTOM HORIZONTALLY 🎊🎉✨ `);
     }
   }
 }
