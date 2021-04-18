@@ -88,13 +88,19 @@ const bestPlayer: any = () => {
 
   if (boxes[3] === currentPlayerText) {
     if (boxes[4] === currentPlayerText && boxes[5] === currentPlayerText) {
-      alert(`${currentPlayerText} HAS WON MIDDLE`);
+      alert(`${currentPlayerText} HAS WON MIDDLE HORIZONTALLY`);
     }
   }
 
   if (boxes[1] === currentPlayerText) {
     if (boxes[4] === currentPlayerText && boxes[7] === currentPlayerText) {
       alert(`${currentPlayerText} HAS WON MIDDLE VERTICALLY`);
+    }
+  }
+
+  if (boxes[2] === currentPlayerText) {
+    if (boxes[5] === currentPlayerText && boxes[8] === currentPlayerText) {
+      alert(`${currentPlayerText} HAS WON VERTICALL RIGHT`);
     }
   }
 
