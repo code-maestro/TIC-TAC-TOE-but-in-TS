@@ -1,0 +1,24 @@
+#board{
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  margin-bottom: 50px;
+  column-gap: 1rem;
+}
+
+.square{
+  background-color: yellowgreen;
+  height: 120px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.square:hover{
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-2px) scale(1.1);
+  background-color: rgba(10, 22, 4, 0.714);
+  cursor: pointer;
+}
