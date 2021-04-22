@@ -6,6 +6,13 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
+.firebaserc
+firebase.json
+firebase.indexes.json
+firebase.rules
+storage.rules
+remoteconfig.template.json
+
 
 # Firebase cache
 .firebase/
